@@ -16,7 +16,11 @@ layout: default
         </div>
         
         <div class="project-image">
+          {% if post.image != nil %}
           <amp-img width="280px" height="200px" src="{{post.image}}"></amp-img>
+          {% else %}
+          {{ post.noimage }}
+          {% endif %}
         </div>
 
         <div class="project-description-container">
