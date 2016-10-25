@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% if page.github != nil %}
+  <a class="github-fork-ribbon right-top ribon-black" href="{{ page.github }}" title="Fork me on GitHub">Fork me on GitHub</a>
+{% endif %}
+<main class="content" role="main">
+  <article class="post">
+    <div class="post-meta">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    <section class="post-content">
+      <a name="topofpage"></a>
+      {{content}}
+    </section>
+      </div>
+    </div>
+  </article>
+</main>

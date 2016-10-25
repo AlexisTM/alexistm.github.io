@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<a class="github-fork-ribbon right-top" href="http://github.com/AlexisTM" title="See me on Github">See me on Github</a>
+<main class="content" role="main">
+  <header class="metro-header">
+      <h1 class="metro-title">{{ site.title }}</h1>
+  </header>
+
+  <div class="projects-container">
+  
+    {% for post in site.posts %}
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title"> {{post.title}} </div>
+        </div>
+        
+        <div class="project-image">
+          <amp-img width="280px" height="200px" src="{{post.image}}"></amp-img>
+        </div>
+
+        <div class="project-description-container">
+        <div class="project-description">
+        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+        {{post.description}}</div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</main>
+{% include footer.html %}
