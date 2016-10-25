@@ -1,7 +1,7 @@
 ---
 layout: project
 type: released
-noimage: '<i class="fa fa-code" style="font-size: 12em" aria-hidden="true"></i>'
+noimage: '<i class="fa fa-code fa-big12" aria-hidden="true"></i>'
 image: 
 title: Simple JSON for PHP
 github: https://github.com/AlexisTM/Simple-Json-PHP

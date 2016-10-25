@@ -1,7 +1,7 @@
 ---
 layout: project
 type: WIP
-noimage: '<i class="fa fa-paper-plane-o" style="font-size: 12em" aria-hidden="true"></i>'
+noimage: '<i class="fa fa-paper-plane-o fa-big12" aria-hidden="true"></i>'
 image: 
 title: FlyingROS
 github: https://github.com/AlexisTM/flyingros/
