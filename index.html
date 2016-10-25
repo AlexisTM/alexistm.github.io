@@ -8,8 +8,10 @@ layout: default
   </header>
 
   <div class="projects-container">
-  
+    <hr />
+    <h2>Released</h2>
     {% for post in site.posts %}
+    {% if post.type == "released" %}
       <div class="project">
         <div class="project-header">
           <div class="project-title"> {{post.title}} </div>
@@ -29,6 +31,59 @@ layout: default
         {{post.description}}</div>
         </div>
       </div>
+    {% endif %}
+    {% endfor %}
+
+    <hr />
+    <h2>Work in progress</h2>
+    {% for post in site.posts %}
+    {% if post.type == "WIP" %}
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title"> {{post.title}} </div>
+        </div>
+        
+        <div class="project-image">
+          {% if post.image != nil %}
+          <amp-img width="280px" height="200px" src="{{post.image}}"></amp-img>
+          {% else %}
+          {{ post.noimage }}
+          {% endif %}
+        </div>
+
+        <div class="project-description-container">
+        <div class="project-description">
+        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+        {{post.description}}</div>
+        </div>
+      </div>
+    {% endif %}
+    {% endfor %}
+
+    <hr />
+    <h2>Waiting for more time</h2>
+    {% for post in site.posts %}
+    {% if post.type == "standby" %}
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title"> {{post.title}} </div>
+        </div>
+        
+        <div class="project-image">
+          {% if post.image != nil %}
+          <amp-img width="280px" height="200px" src="{{post.image}}"></amp-img>
+          {% else %}
+          {{ post.noimage }}
+          {% endif %}
+        </div>
+
+        <div class="project-description-container">
+        <div class="project-description">
+        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+        {{post.description}}</div>
+        </div>
+      </div>
+    {% endif %}
     {% endfor %}
 
   </div>
