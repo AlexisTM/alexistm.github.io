@@ -1,8 +1,6 @@
 # Setup
-title:  >
-     @AlexisTM's project list
-description: >
-     Simple blog about AlexisTM's work
+title:  "@AlexisTM's project list"
+description: "Simple blog about AlexisTM's work"
 tagline:    'AlexisTM Alexis Paques'
 logo :      '/assets/images/logo.png'
 logowhite : '/assets/images/logo-white.png'
