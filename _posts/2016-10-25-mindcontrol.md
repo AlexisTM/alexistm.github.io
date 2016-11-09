@@ -1,11 +1,11 @@
 ---
 layout: project
 type: standby
-noimage: '<i class="fa fa-android fa-big12" style="font-size: 12em" aria-hidden="true"></i>'
+noimage: '<i class="fa fa-android fa-big12" aria-hidden="true"></i>'
 image: 
 title: Mind-control
 github: https://github.com/AlexisTM/Mind-control
-description: Mind-control is a repo giving ideas on how to develop mind control software and hardware.
+description: Mind-control is a repo giving <strong>ideas</strong> on how to <strong>develop mind control</strong> software and hardware.
 ---
 
 This project aim to control brains remotely. 
