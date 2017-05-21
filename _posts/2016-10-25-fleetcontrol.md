@@ -8,3 +8,4 @@ github: https://github.com/umdlife/
 description: The **fleet control** I designed and developped is in use by **Unmanned Life** for demonstrations of Rover and drone interactions.
 ---
 
+Badly, this is closed source. 
