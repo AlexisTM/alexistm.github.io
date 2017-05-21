@@ -8,8 +8,7 @@ github: https://github.com/AlexisTM/flyingros/
 description: FlyingROS is <strong>ROS</strong> showing you how to make <strong>multicopter</strong> applications. It uses <i>open-source and open-hardware</i> solutions and give you all the steps and examples to make you own application. 
 ---
 
-FlyingROS [![Build Status](https://api.travis-ci.org/AlexisTM/flyingros.svg?branch=master)](https://travis-ci.org/AlexisTM/flyingros)
-==============
+[![Build Status](https://api.travis-ci.org/AlexisTM/flyingros.svg?branch=master)](https://travis-ci.org/AlexisTM/flyingros)
 
 Around the Internet of robotics, there is a lot of open-source/open-hardware projects to make an awesome flying robot : **ROS**, **MAVLink**, **PX4**, **Mavros**, **Odroid XU4**. Multiple companies uses thoses projects to make money without contributing to the community. That's why FlyingROS comes to life. To bring user an ***easy*** way to fly multicopters with all tools incorporated together.
 

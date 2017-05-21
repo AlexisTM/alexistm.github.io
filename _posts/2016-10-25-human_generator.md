@@ -8,7 +8,7 @@ github: https://github.com/AlexisTM/humans-generator/
 description: Humans.txt generator is a **npm** package for **NodeJS** allowing you to generate a file with the team that worked on a website/application. Because we matters.
 ---
 
-# Humans Generator [![Build Status](https://travis-ci.org/AlexisTM/humans-generator.svg?branch=master)](https://travis-ci.org/haydenbleasel/humans-generator)
+[![Build Status](https://travis-ci.org/AlexisTM/humans-generator.svg?branch=master)](https://travis-ci.org/haydenbleasel/humans-generator)
 
 Produces a simple, valid humans.txt to be parsed by web crawlers. Adheres to the [specification](http://humanstxt.org/Standard.html) provided by Humanstxt.org. Requires Node 4+. Installed through NPM with:
 
