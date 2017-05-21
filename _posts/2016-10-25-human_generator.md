@@ -5,7 +5,7 @@ noimage: '<i class="fa fa-neuter fa-big12" aria-hidden="true"></i>'
 image: 
 title: Humans.txt generator
 github: https://github.com/AlexisTM/humans-generator/
-description: Humans.txt generator is a **npm** package for **NodeJS** allowing you to generate a file with the team that worked on a website/application. Because we matters.
+description: Humans.txt generator is a <strong>npm</strong> package for <strong>NodeJS</strong> allowing you to generate a file with the team that worked on a website/application. Because we matters.
 ---
 
 [![Build Status](https://travis-ci.org/AlexisTM/humans-generator.svg?branch=master)](https://travis-ci.org/haydenbleasel/humans-generator)
