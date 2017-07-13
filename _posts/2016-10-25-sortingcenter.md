@@ -28,7 +28,7 @@ On this project, I was on charge of the whole software.
 * Multi-robot environment 
 
 <center>
-<amp-img width="600px" src="../../assets/images/poc_sorting_center_rover.jpg"></amp-img>
+<amp-img src="../../assets/images/poc_sorting_center_rover.jpg"></amp-img>
 
 The rover built for the project
 </center>
