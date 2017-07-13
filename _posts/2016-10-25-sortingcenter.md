@@ -3,12 +3,12 @@ layout: project
 type: WIP
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
 image: 
-title: Autonomous Sorting Center
+title: Autonomous Sorting Center<br>
 github: https://github.com/umdlife/
-description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for PostNL via Unmanned Life. 
+description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for PostNL as a Robotics Engineer for Unmanned Life. 
 ---
 
-![POC_sorting_center](assets/images/poc_sorting_center.jpg "Project delivery day")
+![POC_sorting_center](../../assets/images/poc_sorting_center.jpg "Project delivery day")
 Project delivery day with Herna Verhagen (PostNL CEO)
 
 On this project, I was on charge of the whole software. 
@@ -24,7 +24,7 @@ On this project, I was on charge of the whole software.
 * Basic GUI
 * Multi-robot environment 
 
-![POC_sorting_center](assets/images/poc_sorting_center_rover.jpg "Rover close shot")
+![POC_sorting_center](../../assets/images/poc_sorting_center_rover.jpg "Rover close shot")
 The rover built for the project
 
 <iframe src="https://player.vimeo.com/video/224207412" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
