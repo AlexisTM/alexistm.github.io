@@ -9,7 +9,8 @@ description: Development of the proof of concept of an <strong>autonomous sortin
 ---
 
 <center>
-<amp-img width="600px" src="../../assets/images/poc_sorting_center.jpg"></amp-img>
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+
 
 Project delivery day with Herna Verhagen (PostNL CEO)   
 </center>
@@ -28,7 +29,7 @@ On this project, I was on charge of the whole software.
 * Multi-robot environment 
 
 <center>
-<amp-img src="../../assets/images/poc_sorting_center_rover.jpg"></amp-img>
+<amp-img width="600" height="399" src="../../assets/images/poc_sorting_center_rover.jpg" layout="responsive" alt="The rover built for the project"></amp-img>
 
 The rover built for the project
 </center>
