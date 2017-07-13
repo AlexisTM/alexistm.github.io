@@ -67,22 +67,22 @@ The constructor allow you to send JSON, JSONP with callback or in a variable.
 #### Raw JSON
 
 ```php
-  $json = new json();
-  > {  ...  }
+$json = new json();
+> {  ...  }
 ```
 
 #### Callback JSONP
 
 ```php
-  $json = new json('callback', 'myCallback');
-  > myCallback({  ...  });
+$json = new json('callback', 'myCallback');
+> myCallback({  ...  });
 ```
 
 #### Varibale JSONP
 
 ```php
-  $json = new json('var', 'myVariable');
-  > var myVariable = {  ...  };
+$json = new json('var', 'myVariable');
+> var myVariable = {  ...  };
 ```
 
 add($name, $content = true, $encode = true)
@@ -93,7 +93,7 @@ The add method allow you to send anything and convert it to json with ease :
 #### Simple property, could be text, boolean, integer, float, object or array
 
 ```php
-  $json->add('status', 200);
+$json->add('status', 200);
 > {"status" : 200}
 // array
 > [200]
@@ -102,7 +102,7 @@ The add method allow you to send anything and convert it to json with ease :
 #### Bool status : Omit the content and it will send "true" instead. 
 
 ```php
-  $json->add('status');
+$json->add('status');
 > {"status" : true}
 // array
 > [true]
@@ -130,27 +130,27 @@ Then you can add it like a "raw JSON" by disabling encoding.
 
 
 ```php
+$json = new json();
+
+class userDataJSON extends content {
+public function __construct($status, $username, $data){
   $json = new json();
+  $json->add('Status', $status);
+  $json->add('Username', $username);
+  $json->add('UserData', $data);
+  $json->add('Success');
+  $this->json = $json->make();
+  //$this->json = $json->make_array();
+}
+public function get(){
+  return $this->json;
+}
+}
 
-  class userDataJSON extends content {
-    public function __construct($status, $username, $data){
-      $json = new json();
-      $json->add('Status', $status);
-      $json->add('Username', $username);
-      $json->add('UserData', $data);
-      $json->add('Success');
-      $this->json = $json->make();
-      //$this->json = $json->make_array();
-    }
-    public function get(){
-      return $this->json;
-    }
-  }
+$userData = new userDataJSON('Online', 'AlexisTM', $object);
 
-  $userData = new userDataJSON('Online', 'AlexisTM', $object);
-  
-  // Add objects to send as "pure JSON"
-  $json->add('data', $userData->get(), false);
+// Add objects to send as "pure JSON"
+$json->add('data', $userData->get(), false);
 ```
 
 HTML/JS part example
