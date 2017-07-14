@@ -3,7 +3,7 @@ layout: project
 type: WIP
 noimage: '<i class="fa fa-wifi fa-big12" aria-hidden="true"></i>'
 image: 
-title: Fleet control of ground and air platforms<br>
+title: Fleet control<br>
 github: https://github.com/umdlife/
 description: Development of the <strong>fleet control</strong> and synchornization of a heterogeneous multi-robot environment as a Robotics Engineer for Unmanned Life. 
 ---
