@@ -3,7 +3,7 @@ layout: project
 type: WIP
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
 image: 
-title: Sorting Center<br>
+title: Sorting Center
 github: https://github.com/umdlife/
 description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for PostNL as a Robotics Engineer for Unmanned Life. 
 ---
