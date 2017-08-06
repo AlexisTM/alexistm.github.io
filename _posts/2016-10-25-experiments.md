@@ -6,7 +6,7 @@ image:
 url: https://alexistm.github.io/lab/
 title: Experiments
 github: https://github.com/AlexisTM/lab
-description: Diverse experiments
+description: Diverse <strong>experiments</strong> about <strong>AI</strong>, <strong>neuroevolution</strong> and more. 
 ---
 
-<script type="text/javascript">window.location.href = "https://alexistm.github.io/lab/";</script>
+<script type="text/javascript">window.location.replace("https://alexistm.github.io/lab");</script>
