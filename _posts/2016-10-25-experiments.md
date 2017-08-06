@@ -3,7 +3,7 @@ layout: project
 type: WIP
 noimage: '<i class="fa fa-magic fa-big12" aria-hidden="true"></i>'
 image: 
-url: https://alexistm.github.io/lab/
+linkaddress: https://alexistm.github.io/lab/
 title: Experiments
 github: https://github.com/AlexisTM/lab
 description: Diverse <strong>experiments</strong> about <strong>AI</strong>, <strong>neuroevolution</strong> and more. 

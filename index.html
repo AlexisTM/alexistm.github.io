@@ -28,7 +28,12 @@ layout: default
 
         <div class="project-description-container">
         <div class="project-description">
-        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+
+          {% if post.linkaddress != nil %}
+          <a href="{{post.linkaddress}}"><button class="project-button">read more</button></a>
+          {% else %}
+          <a href="{{post.url}}"><button class="project-button">read more</button></a>
+          {% endif %}
         {{post.description}}</div>
         </div>
       </div>{% endif %}{% endfor %}
