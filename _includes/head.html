@@ -17,7 +17,15 @@
   
   <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
   <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-63063320-3', 'auto');
+    ga('send', 'pageview');
+  </script>
 
   <style amp-custom>
   {% include font-awesome.min.css %}
