@@ -13,10 +13,9 @@ description: Buy me a coffee buy giving me some CPU cycles.
 * **Hashes per seconds:** <em id="hashespersecond">0</em><em>H/s</em><br>
 * **Total hashes:** <em id="totalhashes">0</em><em>H</em><br>
 * **Accepted hashes:** <em id="accepted">0</em><em>H</em>
-* **Threads:**  <em id="numthreads">1</em><em>Threads</em> <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
-* **Throttle:**  <em id="throttle">0.8</em><button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
-
-
+* **Threads:**  <em id="numthreads">1</em> <em>Threads</em>    <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
+* **Throttle:**  <em id="throttle">0.8</em>    <button onclick="increaseThrottle();">+</button> <button onclick="reduceThrottle();">-</button>
+* **Info:** <em id="info">Connecting</em>
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 
 <script>
@@ -30,8 +29,12 @@ description: Buy me a coffee buy giving me some CPU cycles.
 		miner.on('found', function() { /* Hash found */ })
 		miner.on('accepted', function() { /* Hash accepted by the pool */ })
 
+
+		miner.on("authed", function() {
+			document.getElementById("info").innerHTML = "Connected";
+		})
 		// Update stats once per second
-		setInterval(function() {
+		setInterval(function() {	
 			var hashesPerSecond = miner.getHashesPerSecond();
 			var totalHashes = miner.getTotalHashes();
 			var acceptedHashes = miner.getAcceptedHashes();
