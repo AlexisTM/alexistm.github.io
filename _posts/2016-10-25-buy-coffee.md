@@ -13,7 +13,7 @@ description: Buy me a coffee buy giving me some CPU cycles.
 * **Hashes per seconds:** <em id="hashespersecond">0</em><em>H/s</em><br>
 * **Total hashes:** <em id="totalhashes">0</em><em>H</em><br>
 * **Accepted hashes:** <em id="accepted">0</em><em>H</em>
-* **Threads:**  <em id="numthreads">1</em> <em>Threads</em>    <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
+* **Threads:**  <em id="numthreads">4</em> <em>Threads</em>    <button onclick="addThread();">+</button> <button onclick="removeThread();">-</button>
 * **Throttle:**  <em id="throttle">0.8</em>    <button onclick="increaseThrottle();">+</button> <button onclick="reduceThrottle();">-</button>
 * **Info:** <em id="info">Connecting</em>
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
@@ -46,7 +46,7 @@ description: Buy me a coffee buy giving me some CPU cycles.
 			document.getElementById("numthreads").innerHTML = numThreads.toString();
 			document.getElementById("throttle").innerHTML = throttle.toString();
 			// Output to HTML elements...
-		}, 333);
+		}, 1000);
 	} 
 
 	function addThread() {
@@ -60,19 +60,21 @@ description: Buy me a coffee buy giving me some CPU cycles.
 
 	function increaseThrottle() {
 		t = miner.getThrottle();
-		if(t > 0.901) {
-			miner.setThrottle(1.0);
+		if(t > 0.9) {
+			t = 1
 		} else {
-			miner.setThrottle(t+0.1);
+			t += 0.1;
 		}
+		miner.setThrottle(t.toFixed(1));
 	}
 	function reduceThrottle() {
 		t = miner.getThrottle();
-		if(t < 0.1999) {
-			miner.setThrottle(0.1);
+		if(t <= 0.21) {
+			t = 0.1
 		} else {
-			miner.setThrottle(t-0.1);
+			t -= 0.1;
 		}
+		miner.setThrottle(t.toFixed(1));
 	}
 	
 </script>
