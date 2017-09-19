@@ -8,18 +8,17 @@ github:
 description: Buy me a coffee buy giving me some CPU cycles.
 ---
 
-<p>
-	<h2>Performances</h2><br>
-	<h4>Hashes per seconds:<h4> <em id="hashespersecond"></em>0<em>H/s</em><br>
-	<h4>Total hashes:<h4> <em id="totalhashes">0</em><em>H</em><br>
-	<h4>Accepted hashes:<h4> <em id="accepted">0</em><em>H</em>
-</p>
+### Performances:
+
+* **Hashes per seconds:** <em id="hashespersecond">0</em><em>H/s</em><br>
+* **Total hashes:** <em id="totalhashes">0</em><em>H</em><br>
+* **Accepted hashes:** <em id="accepted">0</em><em>H</em>
 
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 
 <script>
 	window.onload = function() {
-		var miner = new CoinHive.Anonymous('<site-key>');
+		var miner = new CoinHive.Anonymous('94Ewh5erEv797iMDCHPDwSqQHFt6dvvd');
 		miner.start();
 		miner.setThrottle(0.8)
 			// Listen on events
