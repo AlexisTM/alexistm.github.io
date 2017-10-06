@@ -20,7 +20,7 @@ description: Testing XMR in-browser mining, to compute a coffee with CPU cycles.
 
 This page is using coin-hive, with the current payout 0.00016324 XMR/MH. The XMR price is 79.12536776 EUR and a coffee is 50c.
 
-You currently donated: <em id="coffees"></em> millionth of a coffee.
+You currently donated: <em id="coffees"></em> thousandth of a coffee.
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 
 <script>
@@ -41,8 +41,8 @@ You currently donated: <em id="coffees"></em> millionth of a coffee.
 
 		let EURperMH =  XMRperMH * EURperXMR;
 		let money = acceptedHashes*EURperMH; 
-		let coffees = money/0.50; // Millionth of a coffie
-		document.getElementById("coffees").innerHTML = coffees.toString();
+		let coffees = money/0.50/1000; // thousandth of a coffie
+		document.getElementById("coffees").innerHTML = coffees.toFixed(2).toString();
 
 
 	}
