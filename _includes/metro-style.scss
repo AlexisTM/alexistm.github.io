@@ -1,6 +1,61 @@
 $project-width: 325px;
 $project-height: 450px;
 
+label {
+  box-sizing: border-box;
+  margin-bottom: .5rem;
+  display: inline-block;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn{
+  -webkit-appearance: button;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #fdfdfd;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin: 0;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-red {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-orange {
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+.btn-blue {
+  color: #428bca;
+  border: 1px solid #428bca;
+}
+
 .projects-container {
   align-content: center;
   text-align: center;
@@ -28,6 +83,18 @@ $project-height: 450px;
   padding: 0px;
 }
 
+input:invalid + span:after {
+    content: '✖';
+    color: red;
+    padding-left: 5px;
+}
+
+input:valid + span:after {
+    content: '✓';
+    color: green;
+    padding-left: 5px;
+}
+
 .project-title {
   vertical-align: middle;
   text-align: center;
@@ -35,6 +102,16 @@ $project-height: 450px;
   font-weight: bold;
   height:100%;
   padding: 11px 0px 0px 0px;
+}
+
+.normal-title {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  height:100%;
+  padding: 0px 0px 0px 0px;
+  font-size: 3rem;
 }
 
 .project-description-container {
@@ -52,16 +129,11 @@ $project-height: 450px;
   height: 100%;
 }
 
-.project-button{
+.project-button-pos{
   position: relative;
   float: right;
   margin: 0px 0px 10px 12px;
   padding: 3px 10px 3px 10px;
-
-  color: white;
-  background-color: #428bca;
-  border-radius: 10px;
-  border-color: #fdfdfd;
 }
 
 .project-read {

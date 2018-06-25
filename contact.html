@@ -1,0 +1,99 @@
+---
+layout: default
+---
+<a class="github-fork-ribbon right-top" href="http://github.com/AlexisTM" title="See me on Github">See me on Github</a>
+<main class="content" role="main">
+  <center>
+    <div style="width: 680px; text-align: left;">
+      <h1 id="page-title" class="normal-title" style="text-align: left">Contact form</h1>
+      <div id="contact-form" hidden="true">
+
+        <label name="name">Display name: </label>
+        <input id="name" type="text" name="name"/>
+        <br /><br />
+        <label name="email">Email: </label>
+        <input id="email" type="email" name="email"/>
+        <br /><br />
+        <label name="company">Company: </label>
+        <input id="company" type="text" name="company"/>
+        <br /><br />
+        <label name="messsage">Message: </label><br>
+        <textarea id="message" type="text" name="message" rows="15" cols="70"></textarea>
+
+        <br /><br />
+        <button id="send-message" class="btn btn-blue">Send</button>
+
+      </div>
+    </div>
+
+    
+  </center>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB8-3qME8FDgsqdn5iohT0Y18zqLlfwLZk",
+      authDomain: "alexistmweb.firebaseapp.com",
+      databaseURL: "https://alexistmweb.firebaseio.com",
+      projectId: "alexistmweb",
+      storageBucket: "",
+      messagingSenderId: "923974724932"
+    };
+
+    function updateFrontEnd(user) {
+      if (user) {
+        // User is signed in.
+        var displayName = user.displayName;
+        var email = user.email;
+        var emailVerified = user.emailVerified;
+        var photoURL = user.photoURL;
+        var isAnonymous = user.isAnonymous;
+        var uid = user.uid;
+        var providerData = user.providerData;
+        console.log(user);
+        let name = user.displayName || user.email || "Anonymous"
+
+        if(!emailVerified) {
+          window.location.assign("/profile");
+        } {
+          document.getElementById('contact-form').hidden = false;
+        }
+
+        document.getElementById("name").value = user.displayName;
+        document.getElementById("email").value = user.email;
+
+      } else {
+        window.location.assign("/profile");
+      }
+    }
+
+    firebase.initializeApp(config);
+    function initApp() {
+      firebase.auth().onAuthStateChanged(function(user) {
+        updateFrontEnd(user);
+      });
+
+      document.getElementById('send-message').addEventListener('click', sendMessage, false);
+
+    }
+
+    function sendMessage() {
+      const addMessage = firebase.functions().httpsCallable('addMessage');
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let company = document.getElementById("company").value;
+      let message = document.getElementById("message").value;
+      addMessage({name: name, email: email, company: company, message: message}).then(function(result) {
+        console.warn("result: ", result)
+      }).catch(function(error) {
+        var code = error.code;
+        var message = error.message;
+        var details = error.details;
+        console.warn("error: ", error)
+      });
+    }
+
+    window.onload = function() {
+      initApp();
+    };
+  </script>
+</main>

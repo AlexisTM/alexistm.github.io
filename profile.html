@@ -1,0 +1,189 @@
+---
+layout: default
+---
+<a class="github-fork-ribbon right-top" href="http://github.com/AlexisTM" title="See me on Github">See me on Github</a>
+<main class="content" role="main">
+  <center>
+    <div style="width: 680px; text-align: left;">
+      <h1 id="page-title" class="normal-title" style="text-align: left">Profile</h1>
+      <div id="connect-form" hidden="true">
+        <h3>Please identify yourself to access this page.</h3>
+        <button id="login-redirect">Login/Register</button>
+        <h6>No spam will ever be sent.</h6>
+      </div>
+      <div id="email-not-verified" hidden="true">
+        <h3>Your email has not been verified yet.</h3>
+        <button id="verify-email">Send another email</button>
+        <br /><br />
+      </div>
+      <div id="personal-info" hidden="true">        
+        <label name="display-name">Display name: </label>
+        <input id="display-name" type="text" placeholder="John Doe" name="display-name">
+        </input>
+        <br /><br />
+
+        <label name="email">Email: </label> <span id="email"></span><br /><br />
+
+        <button id="update-profile" class="btn btn-blue">Apply</button>
+        <br />
+        <h3>Other options</h3>
+        <button id="sign-out" class="btn btn-blue">SignOut</button>
+        <button id="reset-password" class="btn btn-orange">Change my password</button>
+        <button id="delete-account" class="btn btn-red">Delete my account</button>
+      </div>
+    </div>
+
+    
+  </center>
+  <script>
+    // Initialize Firebase
+    var emailSent = false;
+    var config = {
+      apiKey: "AIzaSyB8-3qME8FDgsqdn5iohT0Y18zqLlfwLZk",
+      authDomain: "alexistmweb.firebaseapp.com",
+      databaseURL: "https://alexistmweb.firebaseio.com",
+      projectId: "alexistmweb",
+      storageBucket: "",
+      messagingSenderId: "923974724932"
+    };
+
+    function getWidgetUrl() {
+        return '/login#recaptcha=invisible';
+    }
+
+    var signInWithRedirect = function() {
+      window.location.assign("/login#recaptcha=invisible");
+    };
+
+    function other() {
+      // Result from Redirect auth flow.
+      firebase.auth().getRedirectResult().then(function(result) {
+        if (result.credential) {
+          var token = result.credential.accessToken;
+        } else { }
+        var user = result.user;
+      }).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        var email = error.email;
+        var credential = error.credential;
+        if (errorCode === 'auth/account-exists-with-different-credential') {
+          alert('You have already signed up with a different auth provider for that email.');
+        } else {
+          console.error(error);
+        }
+      });
+    }
+
+    function updateFrontEnd(user) {
+      if (user) {
+        console.log("success");
+        // User is signed in.
+
+        document.getElementById("display-name").value = user.displayName;
+        document.getElementById("email").innerText = user.email;
+
+        console.log(user);
+        let name = user.displayName || user.email || "Anonymous"
+
+        if(user.emailVerified) {
+          document.getElementById("email-not-verified").hidden = true;
+        } else {
+          if(! emailSent) {
+            sendEmailVerification();
+            emailSent = true;
+          }
+          document.getElementById("email-not-verified").hidden = false;
+        }
+        document.getElementById("connect-form").hidden = true;
+        document.getElementById("personal-info").hidden = false;
+      } else {
+        document.getElementById("connect-form").hidden = false;
+        document.getElementById("personal-info").hidden = true;
+        document.getElementById("email-not-verified").hidden = true;
+        console.log("Not connected")
+      }
+    }
+
+    function initApp() {
+      firebase.initializeApp(config);
+      firebase.auth().onAuthStateChanged(function(user) {
+        updateFrontEnd(user);
+      });
+
+      // [END authstatelistener]
+      document.getElementById('verify-email').addEventListener('click', sendEmailVerification, false);
+      document.getElementById('login-redirect').addEventListener('click', signInWithRedirect, false);
+      document.getElementById('sign-out').addEventListener('click', signOut, false);
+      document.getElementById('reset-password').addEventListener('click', sendPasswordReset, false);
+      document.getElementById('update-profile').addEventListener('click', updateProfile, false);
+      document.getElementById('delete-account').addEventListener('click', deleteAccount, false);
+    }
+
+
+    function signOut() {
+      firebase.auth().signOut().then(function() {
+        console.log("Success to signOut");
+      }).catch(function(error) {
+        console.log("Fail to signOut");
+      });
+    }
+
+
+    function sendEmailVerification() {
+      firebase.auth().currentUser.sendEmailVerification().then(function() {});
+    };
+
+
+    function updateProfile() {
+      let user = firebase.auth().currentUser;
+      if(user) {
+        let displayname = document.getElementById("display-name").value;
+        user.updateProfile({'displayName': displayname}).then(function(){
+          location.reload();
+        });
+      };
+    };
+
+    /**
+     * Deletes the user's account.
+     */
+    var deleteAccount = function() {
+        firebase.auth().currentUser.delete().
+        catch (function(error) {
+            if (error.code == 'auth/requires-recent-login') {
+                // The user's credential is too old. She needs to sign in again.
+                firebase.auth().signOut().then(function() {
+                    // The timeout allows the message to be displayed after the UI has
+                    // changed to the signed out state.
+                    setTimeout(function() {
+                        alert('Please sign in again to delete your account.');
+                    }, 1);
+                });
+            }
+        });
+    };
+
+    function sendPasswordReset() {
+      var email = document.getElementById('email').value;
+      firebase.auth().sendPasswordResetEmail(email).then(function() {
+        alert('Password Reset Email Sent!');
+      }).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (errorCode == 'auth/invalid-email') {
+          alert(errorMessage);
+        } else if (errorCode == 'auth/user-not-found') {
+          alert(errorMessage);
+        }
+        console.log(error);
+      });
+      // [END sendpasswordemail];
+    }
+
+
+    window.onload = function() {
+      initApp();
+    };
+  </script>
+</main>

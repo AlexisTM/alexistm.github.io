@@ -30,9 +30,9 @@ layout: default
         <div class="project-description">
 
           {% if post.linkaddress != nil %}
-          <a href="{{post.linkaddress}}"><button class="project-button">read more</button></a>
+          <a href="{{post.linkaddress}}"><button class="btn btn-blue project-button-pos">read more</button></a>
           {% else %}
-          <a href="{{post.url}}"><button class="project-button">read more</button></a>
+          <a href="{{post.url}}"><button class="btn btn-blue project-button-pos">read more</button></a>
           {% endif %}
         {{post.description}}</div>
         </div>
@@ -56,7 +56,7 @@ layout: default
 
         <div class="project-description-container">
         <div class="project-description">
-        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+        <a href="{{post.url}}"><button class="btn btn-blue project-button-pos">read more</button></a>
         {{post.description}}</div>
         </div>
       </div>{% endif %}{% endfor %}
@@ -79,11 +79,10 @@ layout: default
 
         <div class="project-description-container">
         <div class="project-description">
-        <a href="{{post.url}}"><button class="project-button">read more</button></a>
+        <a href="{{post.url}}"><button class="btn btn-blue project-button-pos">read more</button></a>
         {{post.description}}</div>
         </div>
       </div>{% endif %}{% endfor %}
   </div>
   </center>
 </main>
-{% include footer.html %}
