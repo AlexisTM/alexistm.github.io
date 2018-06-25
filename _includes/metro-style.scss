@@ -21,9 +21,12 @@ input, textarea {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.btn:not([disabled]){
+  cursor: pointer;
+}
+
 .btn{
   -webkit-appearance: button;
-  cursor: pointer;
   padding: 5px;
   background-color: transparent;
   border-radius: 10px;
@@ -47,13 +50,22 @@ input, textarea {
 }
 
 .btn-orange {
-  color: #ffc107;
-  border: 1px solid #ffc107;
+  color: #fd7e14;
+  border: 1px solid #fd7e14;
+}
+
+.btn-green {
+  color: #28a745;
+  border: 1px solid #28a745;
 }
 
 .btn-blue {
   color: #428bca;
   border: 1px solid #428bca;
+}
+
+.btn:disabled {
+  background-color: #e9ebee;
 }
 
 .projects-container {
