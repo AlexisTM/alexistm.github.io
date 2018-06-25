@@ -77,18 +77,21 @@ layout: default
     }
 
     function sendMessage() {
+      document.getElementById('send-message').disabled = true;
+      document.getElementById('send-message').text = 'sending';
       const addMessage = firebase.functions().httpsCallable('addMessage');
       let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
       let company = document.getElementById("company").value;
       let message = document.getElementById("message").value;
       addMessage({name: name, email: email, company: company, message: message}).then(function(result) {
-        console.warn("result: ", result)
+        document.getElementById('send-message').text = 'Message sent!';
       }).catch(function(error) {
         var code = error.code;
         var message = error.message;
         var details = error.details;
         console.warn("error: ", error)
+        document.getElementById('send-message').text = 'error: ' + error.message;
       });
     }
 
