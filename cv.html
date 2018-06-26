@@ -8,27 +8,35 @@ layout: default
   {% endcapture %}
   {{ include_to_scssify | scssify }}
   </style>
-<div class="content" tabindex="0" style="right: -15px;">
+<div class="content" tabindex="0">
     <div>
-        <div id="cvmain" style="width:860px;">
+        <div id="cvmain">
             <style type="text/css"></style>
             <div>
                 <div class="basicinfo">
                     <h1 class="name">Alexis Paques</h1>
                     <div class="clearfix"></div>
                     <div class="person_info">
-                        <div class="person_left">
-                            <p> Email : </p>
-                            <p> Phone : </p>
-                            <p> Address : </p>
-                            <p> Website : </p>
+                        <div>
+                            <span class="person_left">Name: </span>
+                            <span class="person_right">Alexis Paques</span>
                         </div>
-                        <div class="person_right" style="overflow:hidden">
-                            <p>Alexis Paques</p>
-                            <p>(+32) 496-203699</p>
-                            <p><span>Belgium</span></p>
-                            <p>alexis.paques@gmail.com</p>
+                        <div>
+                            <span class="person_left">Email: </span>
+                            <span class="person_right">alexis.paques@gmail.com</span>
                         </div>
+                        <div>
+                            <span class="person_left">Phone: </span>
+                            <span class="person_right">(+32) 496-203699</span>
+                        </div>  
+                        <div>
+                            <span class="person_left">Address: </span>
+                            <span class="person_right"><span>Belgium</span></span>
+                        </div>  
+                        <div>
+                            <span class="person_left">Website: </span>
+                            <span class="person_right"><a href="http://alexistm.github.io">http://alexistm.github.io</a></span>
+                        </div>  
                     </div>
                 </div>
                 <div id="picholder">
