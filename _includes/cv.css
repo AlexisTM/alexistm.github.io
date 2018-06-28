@@ -185,6 +185,7 @@ body {
 @media screen and (max-width: 915px) {
     #cvmain {
         width: 95%;
+        margin-top: 2em;
     }
 
     #cvmain {
