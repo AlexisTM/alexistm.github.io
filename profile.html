@@ -8,12 +8,12 @@ layout: default
       <h1 id="page-title" class="normal-title" style="text-align: left">Profile</h1>
       <div id="connect-form" hidden="true">
         <h3>Please identify yourself to access this page.</h3>
-        <button id="login-redirect">Login/Register</button>
+        <button id="login-redirect" class="btn btn-blue">Login/Register</button>
         <h6>No spam will ever be sent.</h6>
       </div>
       <div id="email-not-verified" hidden="true">
         <h3>Your email has not been verified yet.</h3>
-        <button id="verify-email">Send another email</button>
+        <button id="verify-email" class="btn btn-blue">Send another email</button>
         <br /><br />
       </div>
       <div id="personal-info" hidden="true">
@@ -27,7 +27,8 @@ layout: default
         <button id="update-profile" class="btn btn-blue">Apply</button>
         <br />
         <h3>Other options</h3>
-        <button id="sign-out" class="btn btn-blue">SignOut</button>
+        <button id="sign-out" class="btn btn-blue">Sign-out</button>
+        <button id="link-redirect" class="btn btn-blue">Link another account</button>
         <button id="reset-password" class="btn btn-orange">Change my password</button>
         <button id="delete-account" class="btn btn-red">Delete my account</button>
       </div>
@@ -114,6 +115,7 @@ layout: default
       // [END authstatelistener]
       document.getElementById('verify-email').addEventListener('click', sendEmailVerification, false);
       document.getElementById('login-redirect').addEventListener('click', signInWithRedirect, false);
+      document.getElementById('link-redirect').addEventListener('click', signInWithRedirect, false);
       document.getElementById('sign-out').addEventListener('click', signOut, false);
       document.getElementById('reset-password').addEventListener('click', sendPasswordReset, false);
       document.getElementById('update-profile').addEventListener('click', updateProfile, false);
