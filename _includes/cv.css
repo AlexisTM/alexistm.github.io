@@ -5,6 +5,7 @@ body {
 
 #cvmain {
     width: 860px;
+    margin: auto;
 }
 
 #cvmain #qrimagelive {
@@ -186,10 +187,6 @@ body {
     #cvmain {
         width: 95%;
         margin-top: 2em;
-    }
-
-    #cvmain {
-        margin: 10px;
         padding: 0;
     }
 
