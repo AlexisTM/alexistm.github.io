@@ -1,0 +1,202 @@
+{
+  "basics": {
+    "name": "Alexis Paques",
+    "label": "Lead Robotics Engineer",
+    "picture": "",
+    "email": "alexis.paques@gmail.com",
+    "phone": "+447927560009",
+    "website": "http://alexistm.github.io",
+    "summary": "I love to experience new technologies, hardware as well as software. I am a conscientious person who works hard to get the right/best result, depending on the deadline. In the meantime, I consider coding as an art. It is personal and it should beautiful to ourselves yet readable for the others. I am autodidact as well as flexible, I can learn new languages with ease.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "BE",
+      "region": "Brussels"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Alexis Paques",
+        "url": "https://www.linkedin.com/in/alexispaques/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Unmanned Life",
+      "position": "Lead Robotics Engineer",
+      "website": "http://unmanned.life",
+      "startDate": "2017-02-28",
+      "summary": "As the Lead Robotics Engineer, I lead the robotics team to develop autonomous robots according to the client needs and company requirements. As the Architect, I design both the software, the embedded hardware architecture and the network architecture to provide a modular autonomy to the robots and an easy to use Platform API.",
+      "highlights": [
+        "The disruptive innovation award, Techworks 2017",
+        "Best MEC use-case, MEC Congress 2017",
+        "The Postal Innovation award, PostExpo 2017",
+        "Outstanding contributor, U-Life awards, 2017"
+      ]
+    },
+    {
+      "company": "UCL",
+      "position": "Robotics Engineer",
+      "website": "http://uclouvain.be",
+      "startDate": "2015-10-01",
+      "endDate": "2016-12-31",
+      "summary": "In collaboration with the MIT (Boston, MA), the UCL (Belgium) have the project to build with multicopters and ground robots. I made a task-based abstraction layer, as well as a localization system, to allow Masters & PhD students to test their contributions on the multicopters in real conditions.",
+      "highlights": []
+    },
+    {
+      "company": "MIT",
+      "position": "Invited Researcher",
+      "website": "http://web.mit.edu",
+      "startDate": "2016-07-01",
+      "endDate": "2016-08-31",
+      "summary": "Invited two months at the MIT as part of my thesis on UAV autonomous control. During those 2 months, I added the RTK-based localization.",
+      "highlights": []
+    },
+    {
+      "company": "ECAM",
+      "position": "Full Stack Engineer",
+      "website": "https://github.com/ECAM-Brussels/ECM",
+      "startDate": "2015-02-01",
+      "endDate": "2015-06-30",
+      "summary": "Open-source solution to manage exams copies and to generate pre-filled and ready-to-print PDF files for the exams. This has been developed in collaboration with Sébastien Combéfis (ECAM lecturer). ECM is in use since June 2015.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "ECAM (Brussels)",
+      "area": "Electronics & IT",
+      "studyType": "Master",
+      "startDate": "2011-09-01",
+      "endDate": "2016-06-30",
+      "gpa": "",
+      "courses": [
+        "Control Engineering",
+        "Telecommunications",
+        "AI",
+        "Digital & Analog Electronics",
+        "Fuzzy Logic"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "The disruptive innovation award",
+      "date": "2017-11-23",
+      "awarder": "Techworks",
+      "summary": "Awarded for the autonomous sorting center and the autonomous drone fleet applications."
+    },
+    {
+      "title": "Best MEC use-case",
+      "date": "2017-09-18",
+      "awarder": "MEC Congress",
+      "summary": "Best Mobile Edge Computing use-case for multicopters flying over 4G/MEC."
+    },
+    {
+      "title": "The Postal Innovation award",
+      "date": "2017-09-28",
+      "awarder": "PostExpo 2017",
+      "summary": "Best innovation - Autonomous Sorting Center"
+    },
+    {
+      "title": "Outstanding contributor",
+      "date": "2017-09-01",
+      "awarder": "Unmanned Life's CEO",
+      "summary": "Award given as an acknowledgement of the contribution to the company"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Organising National Olympiads in Informatics: a Review of Selection Processes, Trainings and Promotion Activities",
+      "publisher": "Unmanned Life",
+      "releaseDate": "2015-07",
+      "website": "http://ioinformatics.org/oi/pdf/v9_2015_15_26.pdf",
+      "summary": "This paper summarises the key activities that could be organised by any country"
+    },
+    {
+      "name": "Pythia reloaded: an intelligent unit testing-based code grader for education",
+      "publisher": "CHESE'15",
+      "releaseDate": "2015-07",
+      "website": "https://dl.acm.org/citation.cfm?doid=2792404.2792407",
+      "summary": "Automatic assessment of code to support education."
+    },
+    {
+      "name": "Système de guidage d’un drone à l’aide de capteurs embarqués, destiné à la construction automatique d’ouvrages en maçonnerie",
+      "publisher": "ISILF",
+      "releaseDate": "2017-05",
+      "website": "https://dial.uclouvain.be/pr/boreal/object/boreal:185730",
+      "summary": "This work intends to demonstrate the feasibility of automated construction of buildings using robots"
+    }
+  ],
+  "skills": [
+    {
+      "name": "General",
+      "level": "Master",
+      "keywords": [
+        "Robotics",
+        "IT",
+        "Electronics",
+        "Web"
+      ]
+    },
+    {
+      "name": "Hardware",
+      "level": "Master",
+      "keywords": [
+        "UAV",
+        "UGV",
+        "Pixhawk (PX4)",
+        "Embedded Computers (Odroid, RPi)",
+        "Microcontrollers (Arduino, STM, PIC)"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "Golang",
+        "NodeJS",
+        "Bash",
+        "MatLab"
+      ]
+    },
+    {
+      "name": "OS",
+      "level": "Master",
+      "keywords": [
+        "Linux Ubuntu",
+        "ArchLinux",
+        "Windows"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Master",
+      "keywords": [
+        "ROS",
+        "Git",
+        "NPM / Gulp / Grunt",
+        "Altium",
+        "MatLab",
+        "Sublime Text / VS Code"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": []
+}

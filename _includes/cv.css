@@ -313,6 +313,7 @@
   .card-nested {
     min-height: 0;
     border-width: 1px 0 0 0;
+    page-break-inside: avoid;
   }
   .card-nested:before,
   .card-nested:after {
@@ -330,6 +331,11 @@
   .background-card {
     padding: 10px 20px;
   }
+  @media print {
+    .background-card {
+      border: none;
+    }
+  }
   .card-wrapper {
     padding: 5px;
   }
@@ -340,7 +346,6 @@
   }
   .background-details .detail {
     display: table;
-    page-break-inside: avoid;
   }
   .background-details .detail .icon {
     min-width: 45px;
@@ -560,8 +565,9 @@
     }
   }
   .contact-details .detail {
-    display: table;
     padding: 10px 0;
+    
+    display: inline-block;
   }
   .contact-details .detail .icon {
     padding: 0 10px;
@@ -577,7 +583,6 @@
   }
   .contact-details .detail .icon,
   .contact-details .detail .info {
-    display: table-cell;
     vertical-align: middle;
   }
   @media (max-width: 768px) {
@@ -602,10 +607,17 @@
     .contact-details .detail .info {
       display: inline-block;
     }
+    
+    .contact-details {
+      text-align: center;
+    }
+    .detail {
+      float: none;
+      display: inline-block;
+    }
   }
   @media (max-width: 992px) and (min-width: 768px) {
     .contact-details .detail {
-      float: left;
       width: 25%;
     }
   }
@@ -943,12 +955,22 @@
     }
     .contact-details .detail {
       position: relative;
-      float: left;
-      width: 25%;
+      float: none;
+      width: 30%;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
-      padding: 0;
+      padding: 10px;
+    }
+    .contact-details .detail .icon,
+    .contact-details .detail .info {
+      display: inline-flex;
+    }
+    .contact-details {
+      text-align: center;
+    }
+    .detail {
+      display: inline-flex;
     }
     .floating-nav,
     .floating-nav-trigger {
