@@ -1,6 +1,20 @@
 $project-width: 325px;
 $project-height: 450px;
 
+@media all {
+  .printonly {
+    display: none;
+  }
+}
+@media print {
+  .hiddenprint {
+    display: none;
+  }
+  .printonly {
+    display: initial;
+  }
+}
+
 .middle-container {
   width: 574px;
   text-align: left;

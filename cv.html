@@ -1,152 +1,551 @@
 ---
-layout: default
+layout: empty
 ---
-<main>
-  <style amp-custom>
-  {% capture include_to_scssify %}
-  {% include cv.css %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
-<div class="content" tabindex="0">
-    <div>
-        <div id="cvmain">
-            <style type="text/css"></style>
-            <div>
-                <div class="basicinfo">
-                    <h1 class="name">Alexis Paques</h1>
-                    <div class="clearfix"></div>
-                    <div class="person_info">
-                        <div>
-                            <span class="person_left">Name: </span>
-                            <span class="person_right">Alexis Paques</span>
-                        </div>
-                        <div>
-                            <span class="person_left">Email: </span>
-                            <span class="person_right">alexis.paques@gmail.com</span>
-                        </div>
-                        <div>
-                            <span class="person_left">Phone: </span>
-                            <span class="person_right">(+32) 496-203699</span>
-                        </div>  
-                        <div>
-                            <span class="person_left">Address: </span>
-                            <span class="person_right"><span>Belgium</span></span>
-                        </div>  
-                        <div>
-                            <span class="person_left">Website: </span>
-                            <span class="person_right"><a href="http://alexistm.github.io">http://alexistm.github.io</a></span>
-                        </div>  
-                    </div>
-                </div>
-                <div id="picholder">
-                    <div id="photo">
-                        <img width="150" height="150" src="/assets/images/cv.jpg">
-                    </div>
-                    <div id="qrimagelive">
-                        <img width="150" height="150" src="/assets/images/qr.png">
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="section">
-                <div class="section_title">
-                    <span>Summary</span>
-                </div>
-                <div class="section_content">I am a driven Robotics Engineer experienced in Software/Hardware design for UAVs and UGVs. <a href="/">Check out what we developed @UnmannedLife.</a></div>
-            </div>
-            <div class="section">
-                <div class="section_title">
-                    <span>Work Experience</span>
-                </div>
-                <div class="section_content">
-                    <div class="experience">
-                        <h3 class="title">Lead Robotics Engineer & Architect</h3>
-                        <h4 class="date">
-                            February 2017 - Present
-                        </h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname">Unmanned Life, Brussels, Belgium</h4>
-                        <div class="desc">
-As the Lead Robotics Engineer, I lead the robotics team to develop autonomous robots according to the client needs and company requirements. As the Architect, I design both the software, the embedded hardware architecture and the network architecture to provide a modular autonomy to the robots and an easy to use Platform API.</div>
-                    </div>
-                    <div class="experience">
-                        <h3 class="title">Robotics Engineer</h3>
-                        <h4 class="date">
-                            October 2015 - January 2017
-                        </h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname">UCL, Louvain-la-Neuve, Belgium</h4>
-                        <div class="desc">
-In collaboration with the MIT (Boston, MA), the UCL (Belgium) have the project to build with multicopters and ground robots. I made a task-based abstraction layer, as well as a localization system, to allow Masters & PhD students to test their contributions on the multicopters in real conditions.</div>
-                    </div>
-                    <div class="experience">
-                        <h3 class="title">Invited Researcher</h3>
-                        <h4 class="date">
-                            July 2016 - August 2016
-                        </h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname">MIT, Boston, USA (MA)</h4>
-                        <div class="desc">
-In collaboration with the MIT (Boston, MA), the UCL (Belgium) have the project to build with multicopters and ground robots. I made a task-based abstraction layer, as well as a localization system, to allow Masters & PhD students to test their contributions on the multicopters in real conditions.</div>
-                    </div>
-                    <div class="experience">
-                        <h3 class="title">Full Stack Developer</h3>
-                        <h4 class="date">
-                            February 2015 - June 2015
-                        </h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname">ECAM, Brussels, Belgium</h4>
-                        <div class="desc">
-Open-source solution to manage exams copies and to generate pre-filled and ready-to-print PDF files for the exams. This has been developed in collaboration with Sébastien Combéfis (ECAM lecturer). ECM is in use since June 2015. <a href='https://github.com/ECAM-Brussels/ECM'>[Github source]</a>
-                        </div>
-                    </div>
-                    <div class="experience">
-                        <h3 class="title"></h3>
-                        <h4 class="date">
-                        </h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname"><em><a href="https://www.linkedin.com/in/alexispaques/">See more on LinkedIn</a></em></h4>
-                        <div class="desc"></a>
-                        </div>
-                    </div>
-                </div> <!-- End of experiences descriptions-->
-            </div> <!-- End of experiences -->
-            <div class="section">
-                <div class="section_title">
-                    <span>Qualifications</span>
-                </div>
-                <div class="section_content">
-                    <ul>
-                        <li>General: Robotics, IT, Electonics, Web</li>
-                        <li>Hardware: UAV, UGV, PX4, Embedded computers, Microcontrollers (Arduino, STM, PIC)</li>
-                        <li>Languages: Python, C++/C, Golang, NodeJS (Vue, Phase, HTML, CSS), Bash, Matlab</li>
-                        <li>OS: Linux (Ubuntu/Archlinux), Windows</li>
-                        <li>Software: ROS, Git, Altium, Sublime Text, Gulp, Grunt, ...</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section_title">
-                    <span>Education</span>
-                </div>
-                <div class="section_content">
-                    <div class="experience">
-                        <h3 class="title">Master in IT and Electronics</h3>
-                        <h4 class="date">September 2011 - September 2016</h4>
-                        <div class="clearfix"></div>
-                        <h4 class="cname">ECAM, Brussels, Belgium</h4>
-                        <div class="desc">Great distinction</div>
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section_title">
-                    <span>Interests</span>
-                </div>
-                <div class="section_content">I love to experience new technologies, hardware as well as software. I am a conscientious person who works hard to get the right/best result, depending on the deadline. In the meantime, I consider coding as an art. It is personal and it should beautiful to ourselves yet readable for the others. I am autodidact as well as flexible, I canlearn new languages (IT languages...) with ease.</div>
-            </div>
-        </div>
-    </div>
-</div>
-</main>
+
+<!DOCTYPE html>
+<html ⚡ lang="en">
+	<head>
+		<meta charset="utf-8"/>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link rel="canonical" href="http://alexistm.github.io{{ page.url }}" />
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="shortcut icon" href="{{site.favicon}}"/>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-63063320-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Alexis Paques</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    
+    <script type="application/ld+json">
+    {% include metadata.json %}
+    </script>
+
+		<style amp-custom>
+{% capture include_to_scssify %}
+{% include metro-style.scss %}
+{% include cv.css %}
+{% endcapture %}
+{{ include_to_scssify | scssify }}
+</style>
+  </head>
+  <body itemscope="itemscope" itemtype="http://schema.org/Person">
+  {% include header.html %}
+	<div class="container-fluid">
+		<div class="row main clearfix">
+			<a class="js-floating-nav-trigger floating-nav-trigger" href="#">
+				<i class="icon-bars"></i>
+				<span class="close-icon">&times;</span>
+			</a>
+			<nav class="floating-nav js-floating-nav">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#about">
+							<i class="mr-10 icon-board"></i>About
+						</a>
+					</li>
+					<li>
+						<a href="#work-experience">
+							<i class="mr-10 icon-office"></i>Work Experience
+						</a>
+					</li>
+					<li>
+						<a href="#skills">
+							<i class="mr-10 icon-tools"></i>Skills
+						</a>
+					</li>
+					<li>
+						<a href="#education">
+							<i class="mr-10 icon-graduation-cap"></i>Education
+						</a>
+					</li>
+					<li>
+						<a href="#awards">
+							<i class="mr-10 icon-trophy"></i>Awards
+						</a>
+					</li>
+					<li>
+						<a href="#publications">
+							<i class="mr-10 icon-newspaper"></i>Publications
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="col-md-3 card-wrapper profile-card-wrapper affix">
+				<div class="card profile-card">
+					<span class="profile-pic-container">
+						<div class="profile-pic">
+							<img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Alexis Paques" src="/assets/images/cv.jpg" itemprop="image"/>
+						</div>
+						<div class="name-and-profession text-center">
+							<h3 itemprop="name">
+								<b>Alexis Paques</b>
+							</h3>
+							<h5 class="text-muted" itemprop="jobTitle">Lead Robotics Engineer</h5>
+						</div>
+					</span>
+					<hr/>
+					<div class="contact-details clearfix">
+						<div class="detail">
+							<span class="icon">
+								<i class="icon fs-lg icon-location"></i>
+							</span>
+							<span class="info">Brussels, BE</span>
+						</div>
+						<div class="detail">
+							<span class="icon">
+								<i class="icon fs-lg icon-phone"></i>
+							</span>
+							<span class="info" itemprop="telephone">+447927560009</span>
+						</div>
+						<div class="detail">
+							<span class="icon">
+								<i class="icon fs-lg icon-mail"></i>
+							</span>
+							<span class="info">
+								<a class="link-disguise" href="mailto:alexis.paques@gmail.com" itemprop="email">alexis.paques@gmail.com</a>
+							</span>
+						</div>
+						<div class="detail">
+							<span class="icon">
+								<i class="icon fs-lg icon-link"></i>
+							</span>
+							<span class="info">
+								<a href="http://alexistm.github.io" target="_blank">http://alexistm.github.io</a>
+							</span>
+						</div>
+						<div class="detail">
+							<span class="icon" title="Languages I speak">
+								<i class="icon fs-lg icon-language"></i>
+							</span>
+							<span class="info">French, English</span>
+						</div>
+					</div>
+					<hr/>
+					<div class="social-links text-center">
+						<div>
+              <a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/alexispaques/" target="_blank" data-toggle="tooltip" title="Alexis Paques on LinkedIn"></a> 
+              <span class="printonly" style="vertical-align: baseline;">linkedin.com/in/alexispaques</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-9 card-wrapper pull-right">
+				<div class="card background-card">
+					<h4 class="text-uppercase">Background</h4>
+					<hr/>
+					<div class="background-details">
+						<div class="detail" id="about">
+							<div class="icon">
+								<i class="fs-lg icon-board"></i>
+								<span class="mobile-title">About</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">About</h4>
+								<div class="card card-nested">
+									<div class="content mop-wrapper" itemprop="description">
+										<p>I love to experience new technologies, hardware as well as software. I am a conscientious person who works hard to get the right/best result, depending on the deadline. In the meantime, I consider coding as an art. It is personal and it should beautiful to ourselves yet readable for the others. I am autodidact as well as flexible, I can learn new languages with ease.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail" id="work-experience">
+							<div class="icon">
+								<i class="fs-lg icon-office"></i>
+								<span class="mobile-title">Work Experience</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">Work Experience</h4>
+								<ul class="list-unstyled clear-margin">
+									<li class="card card-nested clearfix">
+										<div class="content">
+											<p class="clear-margin relative">
+												<i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
+												<strong>Lead Robotics Engineer</strong>,&nbsp;
+												<a href="http://unmanned.life" target="_blank">Unmanned Life</a>
+											</p>
+											<p class="text-muted">
+												<small>
+													<span class="space-right">Feb, 2017 - Present</span>
+												</small>
+											</p>
+											<div class="mop-wrapper space-bottom">
+												<p>As the Lead Robotics Engineer, I lead the robotics team to develop autonomous robots according to the client needs and company requirements. As the Architect, I design both the software, the embedded hardware architecture and the network architecture to provide a modular autonomy to the robots and an easy to use Platform API.</p>
+											</div>
+											<ul>
+												<li class="mop-wrapper">
+													<p>The disruptive innovation award, Techworks 2017</p>
+												</li>
+												<li class="mop-wrapper">
+													<p>Best MEC use-case, MEC Congress 2017</p>
+												</li>
+												<li class="mop-wrapper">
+													<p>The Postal Innovation award, PostExpo 2017</p>
+												</li>
+												<li class="mop-wrapper">
+													<p>Outstanding contributor, U-Life awards, 2017</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="card card-nested clearfix">
+										<div class="content">
+											<p class="clear-margin relative">
+												<strong>Robotics Engineer</strong>,&nbsp;
+												<a href="http://uclouvain.be" target="_blank">UCL</a>
+											</p>
+											<p class="text-muted">
+												<small>
+													<span class="space-right">Oct, 2015 - Dec, 2016</span>
+													<span>
+														<i class="icon-clock mr-5"></i>1 year 3 months
+													</span>
+												</small>
+											</p>
+											<div class="mop-wrapper space-bottom">
+												<p>In collaboration with the MIT (Boston, MA), the UCL (Belgium) have the project to build with multicopters and ground robots. I made a task-based abstraction layer, as well as a localization system, to allow Masters &amp; PhD students to test their contributions on the multicopters in real conditions.</p>
+											</div>
+										</div>
+									</li>
+									<li class="card card-nested clearfix">
+										<div class="content">
+											<p class="clear-margin relative">
+												<strong>Invited Researcher</strong>,&nbsp;
+												<a href="http://web.mit.edu" target="_blank">MIT</a>
+											</p>
+											<p class="text-muted">
+												<small>
+													<span class="space-right">Jul, 2016 - Aug, 2016</span>
+													<span>
+														<i class="icon-clock mr-5"></i>2 months
+													</span>
+												</small>
+											</p>
+											<div class="mop-wrapper space-bottom">
+												<p>Invited two months at the MIT as part of my thesis on UAV autonomous control. During those 2 months, I added the RTK-based localization.</p>
+											</div>
+										</div>
+									</li>
+									<li class="card card-nested clearfix">
+										<div class="content">
+											<p class="clear-margin relative">
+												<strong>Full Stack Engineer</strong>,&nbsp;
+												<a href="https://github.com/ECAM-Brussels/ECM" target="_blank">ECAM</a>
+											</p>
+											<p class="text-muted">
+												<small>
+													<span class="space-right">Feb, 2015 - Jun, 2015</span>
+													<span>
+														<i class="icon-clock mr-5"></i>5 months
+													</span>
+												</small>
+											</p>
+											<div class="mop-wrapper space-bottom">
+												<p>Open-source solution to manage exams copies and to generate pre-filled and ready-to-print PDF files for the exams. This has been developed in collaboration with Sébastien Combéfis (ECAM lecturer). ECM is in use since June 2015.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="detail" id="skills">
+							<div class="icon">
+								<i class="fs-lg icon-tools"></i>
+								<span class="mobile-title">Skills</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">Skills</h4>
+								<div class="content">
+									<ul class="list-unstyled clear-margin">
+										<li class="card card-nested card-skills">
+											<div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+												<div class="skill-progress master"></div>
+											</div>
+											<div class="skill-info">
+												<strong>General</strong>
+												<div class="space-top labels">
+													<span class="label label-keyword">Robotics</span>
+													<span class="label label-keyword">IT</span>
+													<span class="label label-keyword">Electronics</span>
+													<span class="label label-keyword">Web</span>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested card-skills">
+											<div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+												<div class="skill-progress master"></div>
+											</div>
+											<div class="skill-info">
+												<strong>Hardware</strong>
+												<div class="space-top labels">
+													<span class="label label-keyword">UAV</span>
+													<span class="label label-keyword">UGV</span>
+													<span class="label label-keyword">Pixhawk (PX4)</span>
+													<span class="label label-keyword">Embedded Computers (Odroid, RPi)</span>
+													<span class="label label-keyword">Microcontrollers (Arduino, STM, PIC)</span>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested card-skills">
+											<div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+												<div class="skill-progress master"></div>
+											</div>
+											<div class="skill-info">
+												<strong>Languages</strong>
+												<div class="space-top labels">
+													<span class="label label-keyword">Python</span>
+													<span class="label label-keyword">C/C++</span>
+													<span class="label label-keyword">Golang</span>
+													<span class="label label-keyword">NodeJS</span>
+													<span class="label label-keyword">Bash</span>
+													<span class="label label-keyword">MatLab</span>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested card-skills">
+											<div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+												<div class="skill-progress master"></div>
+											</div>
+											<div class="skill-info">
+												<strong>OS</strong>
+												<div class="space-top labels">
+													<span class="label label-keyword">Linux Ubuntu</span>
+													<span class="label label-keyword">ArchLinux</span>
+													<span class="label label-keyword">Windows</span>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested card-skills">
+											<div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left">
+												<div class="skill-progress master"></div>
+											</div>
+											<div class="skill-info">
+												<strong>Software</strong>
+												<div class="space-top labels">
+													<span class="label label-keyword">ROS</span>
+													<span class="label label-keyword">Git</span>
+													<span class="label label-keyword">NPM / Gulp / Grunt</span>
+													<span class="label label-keyword">Altium</span>
+													<span class="label label-keyword">MatLab</span>
+													<span class="label label-keyword">Sublime Text / VS Code</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="detail" id="education">
+							<div class="icon">
+								<i class="fs-lg icon-graduation-cap"></i>
+								<span class="mobile-title">Education</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">Education</h4>
+								<div class="content">
+									<ul class="list-unstyled clear-margin">
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin relative">
+													<strong>Electronics &amp; IT, Master,&nbsp;</strong>ECAM (Brussels)
+												</p>
+												<p class="text-muted">
+													<small>Sep, 2011 - Jun, 2016</small>
+												</p>
+												<i></i>
+												<div class="space-top labels">
+													<span class="label label-keyword">Control Engineering</span>
+													<span class="label label-keyword">Telecommunications</span>
+													<span class="label label-keyword">AI</span>
+													<span class="label label-keyword">Digital &amp; Analog Electronics</span>
+													<span class="label label-keyword">Fuzzy Logic</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="detail" id="awards">
+							<div class="icon">
+								<i class="fs-lg icon-trophy"></i>
+								<span class="mobile-title">Awards</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">Awards</h4>
+								<div class="content">
+									<ul class="list-unstyled clear-margin">
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin" itemprop="award">
+													<strong>The disruptive innovation award </strong>Techworks
+												</p>
+												<p class="text-muted">
+													<small>Awarded on: Nov 23, 2017</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>Awarded for the autonomous sorting center and the autonomous drone fleet applications.</p>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin" itemprop="award">
+													<strong>Best MEC use-case </strong>MEC Congress
+												</p>
+												<p class="text-muted">
+													<small>Awarded on: Sep 18, 2017</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>Best Mobile Edge Computing use-case for multicopters flying over 4G/MEC.</p>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin" itemprop="award">
+													<strong>The Postal Innovation award </strong>PostExpo 2017
+												</p>
+												<p class="text-muted">
+													<small>Awarded on: Sep 28, 2017</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>Best innovation - Autonomous Sorting Center</p>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin" itemprop="award">
+													<strong>Outstanding contributor </strong>Unmanned Life's CEO
+												</p>
+												<p class="text-muted">
+													<small>Awarded on: Sep 01, 2017</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>Award given as an acknowledgement of the contribution to the company</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="detail" id="publications">
+							<div class="icon">
+								<i class="fs-lg icon-newspaper"></i>
+								<span class="mobile-title">Publications</span>
+							</div>
+							<div class="info">
+								<h4 class="title text-uppercase">Publications</h4>
+								<div class="content">
+									<ul class="list-unstyled clear-margin">
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin">
+													<strong>
+														<a href="http://ioinformatics.org/oi/pdf/v9_2015_15_26.pdf" target="_blank">Organising National Olympiads in Informatics: a Review of Selection Processes, Trainings and Promotion Activities</a>&nbsp;,&nbsp;
+													</strong>Unmanned Life
+												</p>
+												<p class="text-muted">
+													<small>Published on: Jul 01, 2015</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>This paper summarises the key activities that could be organised by any country</p>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin">
+													<strong>
+														<a href="https://dl.acm.org/citation.cfm?doid=2792404.2792407" target="_blank">Pythia reloaded: an intelligent unit testing-based code grader for education</a>&nbsp;,&nbsp;
+													</strong>CHESE'15
+												</p>
+												<p class="text-muted">
+													<small>Published on: Jul 01, 2015</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>Automatic assessment of code to support education.</p>
+												</div>
+											</div>
+										</li>
+										<li class="card card-nested">
+											<div class="content">
+												<p class="clear-margin">
+													<strong>
+														<a href="https://dial.uclouvain.be/pr/boreal/object/boreal:185730" target="_blank">Système de guidage d’un drone à l’aide de capteurs embarqués, destiné à la construction automatique d’ouvrages en maçonnerie</a>&nbsp;,&nbsp;
+													</strong>ISILF
+												</p>
+												<p class="text-muted">
+													<small>Published on: May 01, 2017</small>
+												</p>
+												<div class="mop-wrapper">
+													<p>This work intends to demonstrate the feasibility of automated construction of buildings using robots</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script>$(function () {
+   var toggleFloatingMenu = function() {
+     $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+     $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+   };
+ 
+   $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+   $( "[data-toggle=tooltip]" ).tooltip();
+   $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+     e.preventDefault();
+     toggleFloatingMenu();
+   });
+   $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+ 
+   $("#remaining-profiles").on('show.bs.collapse', function() {
+     $( '.js-profiles-collapse > i' )
+       .removeClass( 'icon-chevron-down' )
+       .addClass( 'icon-chevron-up' );
+   });
+ 
+   $("#remaining-profiles").on('hidden.bs.collapse', function() {
+     $( '.js-profiles-collapse > i' )
+       .removeClass( 'icon-chevron-up' )
+       .addClass( 'icon-chevron-down' );
+   });
+ });
+ </script>
+	<script>WebFontConfig = {
+   google: { families: [ 'Lato:300,400,700:latin' ] }
+ };
+ (function() {
+   var wf = document.createElement('script');
+   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+     '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+   wf.type = 'text/javascript';
+   wf.async = 'true';
+   var s = document.getElementsByTagName('script')[0];
+   s.parentNode.insertBefore(wf, s);
+ })();</script>
+</body></html>
