@@ -1,48 +1,86 @@
 ---
 layout: project
-type: WIP
+type: released
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
 image: 
 title: Sorting Center
 github: https://github.com/umdlife/
-description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for PostNL as a Robotics Engineer for Unmanned Life. 
+description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for Unmanned Life.
 ---
 
-<center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+This is a project meant to become the product of Unmanned Life. It started with a very basic in-house robot for a proof of concept with **PostNL**.
 
+It was the most basic platform to run: Wooden plate with motors, ultrasound sensors for collision prevention and parcel detection and WiFi in a nice case.
 
-Project delivery day with Herna Verhagen (PostNL CEO)   
-</center>
+The hardware design was then outsourced to Quimesis (Belgium) which provided the prototypes for SwissPost and an alternative version was also produced from Unsupervised.AI.
 
-On this project, I was on charge of the whole software. 
+In this project, I was in charge of software development.
 
 **Features implemented**:
 
-* Motor control
-* Collision avoidance system
-* Path planning
-* Robot navigation
-* Parcel detection
-* Real time user feedback
-* Basic GUI
-* Multi-robot environment 
+* Motor control (Arduino then Roboteq SBL2360)
+* Collision prevention (Ultrasound then 2D Lidar)
+* Path planning (Fixed setups then WebUI to define the inputs/outputs)
+* Robot navigation (Fixed setups then paths selected depending on current usage)
+* Parcel detection (Ultrasound then IR detectors)
+* Multi-robot environment (Grid latching system)
+* GUI (PyQT then Web interface using Vue.JS)
+
+This solution won multiple awards:
+* [The Start-up Postal Innovation award, PostExpo 2017 with PostNL](https://www.parcelandpostaltechnologyinternational.com/news/expo/post-expo-2017-show-review.html)
+* [The Postal Innovation award, PostExpo 2018 with SwissPost](https://www.parcelandpostaltechnologyinternational.com/sorting-center-innovation-of-the-year-autonomous-sorting-swiss-post-and-unmanned-life)
+
+<br><br>
+<center>
+<amp-vimeo
+  data-videoid="283651695"
+  layout="responsive"
+  width="640"
+  height="360"
+></amp-vimeo>
+SwissPost promo video.
+</center>
+
+<br>
+
+<center>
+<amp-vimeo
+  data-videoid="224207412"
+  layout="responsive"
+  width="640"
+  height="360"
+></amp-vimeo>
+PostNL (Prime Vision) promo video.
+</center>
+
+<br>
 
 <center>
 <amp-img width="600" height="399" src="../../assets/images/poc_sorting_center_rover.jpg" layout="responsive" alt="The rover built for the project"></amp-img>
 
-The rover built for the project
+The PostNL Project
 </center>
 
-
-<br><br>
-<center>
-<iframe src="https://player.vimeo.com/video/224207412" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/224207412">Autonomous Pop-Up Parcel Sorting Center</a> from <a href="https://vimeo.com/user58773078">Unmanned Life</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-</center>
+<br>
 
 <center>
-Proof of concept video:
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_quimesis.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+
+Quimesis robot with conveyor belt.
 </center>
 
-See more at : [Prime Vision and Unmanned Life POC for an Autonomous Sorting solution](http://unmanned.life/2017/07/prime-vision-unmanned-life-demonstrate-proof-concept-autonomous-sorting-solution/)
+<br>
+
+<center>
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_uai.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+
+Unsupervised.AI robot with conveyor belt.
+</center>
+
+<br>
+
+<center>
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+
+PostNL project delivery day with Herna Verhagen (PostNL CEO)
+</center>

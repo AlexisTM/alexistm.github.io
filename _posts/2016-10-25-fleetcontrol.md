@@ -1,6 +1,6 @@
 ---
 layout: project
-type: WIP
+type: released
 noimage: '<i class="fa fa-wifi fa-big12" aria-hidden="true"></i>'
 image: 
 title: Fleet control
