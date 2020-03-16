@@ -24,6 +24,7 @@ In this project, I was in charge of software development.
 * Robot navigation (Fixed setups then paths selected depending on current usage)
 * Parcel detection (Ultrasound then IR detectors)
 * Multi-robot environment (Grid latching system)
+* UWB-based localization (Pozyx TWR then Bitcraze custom TDoA)
 * GUI (PyQT then Web interface using Vue.JS)
 
 This solution won multiple awards:
@@ -56,15 +57,15 @@ PostNL (Prime Vision) promo video.
 <br>
 
 <center>
-<amp-img width="600" height="399" src="../../assets/images/poc_sorting_center_rover.jpg" layout="responsive" alt="The rover built for the project"></amp-img>
+<amp-img width="600" height="399" src="../../assets/images/poc_sorting_center_rover.jpg" layout="responsive" alt="In-house built robot"></amp-img>
 
-The PostNL Project
+In-house built robot.
 </center>
 
 <br>
 
 <center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_quimesis.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_quimesis.jpg" layout="responsive" alt="Quimesis robot" ></amp-img>
 
 Quimesis robot with conveyor belt.
 </center>
@@ -72,7 +73,7 @@ Quimesis robot with conveyor belt.
 <br>
 
 <center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_uai.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_uai.jpg" layout="responsive" alt="Unsupervised.ai robot" ></amp-img>
 
 Unsupervised.AI robot with conveyor belt.
 </center>
