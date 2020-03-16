@@ -1,6 +1,6 @@
 ---
 layout: project
-type: released
+type: personal
 noimage: '<i class="fa fa-neuter fa-big12" aria-hidden="true"></i>'
 image: 
 title: Humans.txt generator

@@ -1,6 +1,6 @@
 ---
 layout: project
-type: released
+type: personal
 noimage: '<i class="fa fa-code fa-big12" aria-hidden="true"></i>'
 image: 
 title: Simple JSON for PHP

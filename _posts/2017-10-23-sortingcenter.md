@@ -1,6 +1,6 @@
 ---
 layout: project
-type: released
+type: work
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
 image: 
 title: Sorting Center
