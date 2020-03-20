@@ -2,7 +2,7 @@
 layout: project
 type: work
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
-image: 
+image: ../../assets/images/poc_sorting_center_uai.jpg
 title: Sorting Center
 github: https://github.com/umdlife/
 description: Development of the proof of concept of an <strong>autonomous sorting center</strong> based on rovers for Unmanned Life.

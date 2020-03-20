@@ -2,7 +2,7 @@
 layout: project
 type: work
 noimage: '<i class="fa fa-wifi fa-big12" aria-hidden="true"></i>'
-image: 
+image: ../../assets/images/fleetcontrol_fleet.jpg
 title: Fleet control
 github: https://github.com/umdlife/
 description: Development of the <strong>fleet control</strong> and <strong>synchronization</strong> of a heterogeneous multi-robot environment as a Robotics Engineer for Unmanned Life. 

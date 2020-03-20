@@ -2,7 +2,7 @@
 layout: project
 type: work
 noimage: '<i class="fa fa-paper-plane-o fa-big12" aria-hidden="true"></i>'
-image: 
+image: ../../assets/images/flyingros.jpg
 title: FlyingROS
 github: https://github.com/AlexisTM/flyingros/
 description: FlyingROS is the result of my thesis. It shows how to make real <strong>multicopter</strong> applications using <strong>ROS</strong> as its core, leveraging the open-source community to each components.
@@ -43,3 +43,18 @@ List of things to salvage
   * [nav_application](https://github.com/AlexisTM/flyingros/blob/master/flyingros_nav/nodes/nav_application): An urwid application to manage tasks
   * [flyingros_web](https://github.com/AlexisTM/flyingros/tree/master/flyingros_web): A basic web app to manage tasks via websocket and rosbridge
 * [flyingros_pose](https://github.com/AlexisTM/flyingros/tree/master/flyingros_pose) lots of information about SLAM & visual odometry.
+
+
+Why?
+-------
+
+This project has been used to drive a drone meant to built real-sized buildings in partnership between the UCLouvain (Belgium) and the MIT (Boston, MA).
+
+
+<center>
+<amp-img width="3199" height="2285" src="../../assets/images/flyingros.jpg" layout="responsive" alt="Quimesis robot" ></amp-img>
+
+The drone of the project.
+</center>
+
+
