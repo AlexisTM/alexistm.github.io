@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Alexis Paques",
-    "label": "Lead Robotics Engineer",
+    "label": "Head of Robotics",
     "picture": "",
     "email": "alexis.paques@gmail.com",
-    "phone": "+447927560009",
+    "phone": "+32496203699",
     "website": "http://alexistm.github.io",
     "summary": "I love to experience new technologies, hardware as well as software. I am a conscientious person who works hard to get the right/best result, depending on the deadline. In the meantime, I consider coding as an art. It is personal and it should beautiful to ourselves yet readable for the others. I am autodidact as well as flexible, I can learn new languages with ease.",
     "location": {
@@ -24,16 +24,25 @@
   },
   "work": [
     {
+      "company": "The Kobi Company",
+      "position": "Head of Robotics",
+      "website": "http://thekobi.com",
+      "startDate": "2019-08-19",
+      "summary": "As the head of robotics, I build and manage the Robotics & IoT teams and projects as well as continuing to develop the platform. I work in the navigation, sensor drivers & integration, high-performance IPC stack and the cloud platform integration.",
+      "highlights": []
+    },
+    {
       "company": "Unmanned Life",
       "position": "Lead Robotics Engineer",
       "website": "http://unmanned.life",
       "startDate": "2017-02-28",
+      "endDate": "2019-08-16",
       "summary": "As the Lead Robotics Engineer, I lead the robotics team to develop autonomous robots according to the client needs and company requirements. As the Architect, I design both the software, the embedded hardware architecture and the network architecture to provide a modular autonomy to the robots and an easy to use Platform API.",
       "highlights": [
         "The disruptive innovation award, Techworks 2017",
         "Best MEC use-case, MEC Congress 2017",
         "The Postal Innovation award, PostExpo 2017",
-        "Outstanding contributor, U-Life awards, 2017"
+        "Sorting Center Innovation of the Year: Autonomous sorting, PostExpo 2018"
       ]
     },
     {
@@ -84,6 +93,12 @@
   ],
   "awards": [
     {
+      "title": "Sorting Center Innovation of the Year: Autonomous sorting",
+      "date": "2018-11-11",
+      "awarder": "PostExpo 2018",
+      "summary": "The sorting innovation of the year is awarded to the company providing the most innovative solution."
+    },
+    {
       "title": "The disruptive innovation award",
       "date": "2017-11-23",
       "awarder": "Techworks",
@@ -100,18 +115,19 @@
       "date": "2017-09-28",
       "awarder": "PostExpo 2017",
       "summary": "Best innovation - Autonomous Sorting Center"
-    },
-    {
-      "title": "Outstanding contributor",
-      "date": "2017-09-01",
-      "awarder": "Unmanned Life's CEO",
-      "summary": "Award given as an acknowledgement of the contribution to the company"
     }
   ],
   "publications": [
     {
+      "name": "Pythonrobotics: a python code collection of robotics algorithms",
+      "publisher": "arXiv",
+      "releaseDate": "08-2018",
+      "website": "https://arxiv.org/abs/1808.10703",
+      "summary": "This paper describes an Open Source Software (OSS) project: PythonRobotics. This is a collection of robotics algorithms implemented in the Python programming language."
+    },
+    {
       "name": "Organising National Olympiads in Informatics: a Review of Selection Processes, Trainings and Promotion Activities",
-      "publisher": "Unmanned Life",
+      "publisher": "IOInformatics",
       "releaseDate": "2015-07",
       "website": "http://ioinformatics.org/oi/pdf/v9_2015_15_26.pdf",
       "summary": "This paper summarises the key activities that could be organised by any country"
