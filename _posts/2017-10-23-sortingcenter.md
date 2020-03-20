@@ -65,7 +65,7 @@ In-house built robot.
 <br>
 
 <center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_quimesis.jpg" layout="responsive" alt="Quimesis robot" ></amp-img>
+<amp-img width="700" height="470" src="../../assets/images/poc_sorting_center_quimesis.jpg" layout="responsive" alt="Quimesis robot" ></amp-img>
 
 Quimesis robot with conveyor belt.
 </center>
@@ -73,7 +73,7 @@ Quimesis robot with conveyor belt.
 <br>
 
 <center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center_uai.jpg" layout="responsive" alt="Unsupervised.ai robot" ></amp-img>
+<amp-img width="700" height="482" src="../../assets/images/poc_sorting_center_uai.jpg" layout="responsive" alt="Unsupervised.ai robot" ></amp-img>
 
 Unsupervised.AI robot with conveyor belt.
 </center>
@@ -81,7 +81,7 @@ Unsupervised.AI robot with conveyor belt.
 <br>
 
 <center>
-<amp-img width="1024" height="572" src="../../assets/images/poc_sorting_center.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
+<amp-img width="700" height="391" src="../../assets/images/poc_sorting_center.jpg" layout="responsive" alt="Project delivery day with Herna Verhagen (PostNL CEO)" ></amp-img>
 
 PostNL project delivery day with Herna Verhagen (PostNL CEO)
 </center>
