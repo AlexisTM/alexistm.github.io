@@ -50,12 +50,12 @@ Example
 
 `god get` spawns the bot menu, to change the config
 
-![Menu showing: Change name, change context, add interaction, clear interactions, save the god](/doc/menu.png)
+![Menu showing: Change name, change context, add interaction, clear interactions, save the god](https://raw.githubusercontent.com/AlexisTM/discord-god-rust/master/doc/menu.png)
 
 Clicking on the buttons creates a modal for easy configuration
 
-![Modal showing asking to change the name](/doc/god_name_change.png)
+![Modal showing asking to change the name](https://raw.githubusercontent.com/AlexisTM/discord-god-rust/master/doc/god_name_change.png)
 
 `god get` shows the current god configuration
 
-![The output of the god get command, showing the bot name, context, available interactions and memory used for generation](/doc/god_name_change.png)
+![The output of the god get command, showing the bot name, context, available interactions and memory used for generation](https://raw.githubusercontent.com/AlexisTM/discord-god-rust/master/doc/god_name_change.png)
