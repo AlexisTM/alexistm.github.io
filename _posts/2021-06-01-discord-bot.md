@@ -5,7 +5,7 @@ noimage: '<i class="fa fa-paper-robot-o fa-big12" aria-hidden="true"></i>'
 image: ../../assets/images/kirby.jpg
 title: GPT3-AI bot
 github: https://github.com/AlexisTM/discord-god-rust/
-description: This is a discord bot written in Rust that uses GPT-3 to have a constructive discussion. Few gods are implemented, Kirby, Marvin (from Hitchhiker's guide to the galaxy) and Pastafari (The Flying pasta monster, the pastafarism god)
+description: This is a discord bot written in Rust that uses GPT-3 to have a constructive discussion. Few gods are implemented, Kirby, Marvin from Hitchhiker's guide to the galaxy and The Flying pasta monster.
 ---
 
 GPT-3 Discord bot
