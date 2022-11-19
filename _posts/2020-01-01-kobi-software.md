@@ -3,7 +3,7 @@ layout: project
 type: work
 noimage: '<i class="fa fa-car fa-big12" aria-hidden="true"></i>'
 image: ../../assets/images/kobi/kobi-gie.jpg
-title: Autonomous mower software
+title: Autonomous mower
 github: https://github.com/TheKobiCompany/
 description: Development of an autonomous mower software framwork, to demonstrate Kobi's vision ability on any mower
 ---
