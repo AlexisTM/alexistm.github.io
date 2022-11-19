@@ -5,7 +5,7 @@ noimage: '<i class="fa fa-gamepad fa-big12" aria-hidden="true"></i>'
 image:
 title: Multiplayer Proxy for serverless games
 github: https://github.com/AlexisTM/fun-together
-description: This proxy allows to develop games without knowledge of networking. One Game can connect many players, using a websocket medium.
+description: This Rust proxy allows to develop games without knowledge of networking. One Game can connect many players, using a websocket medium.
 ---
 
 WMBP (Websocket multiplayer backend proxy)
