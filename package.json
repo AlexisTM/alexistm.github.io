@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/AlexisTM/alexistm.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-resume": "^0.4.1"
   }
